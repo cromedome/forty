@@ -2,11 +2,17 @@
     <section id="two">
         <div class="inner">
             <header class="major">
-                <h2>{{ .Site.Params.Two.title}}</h2>
+                <h2>Sign Up for Our Mailing List</h2>
             </header>
-            <p>{{ .Site.Params.Two.subtitle }}</p>
+            <form method="post" action="/mailing-list-signup">
+                <div class="row uniform">
+                    <div class="4u 12u$(small)"><input type="text" id="first_name" name="first_name" placeholder="First Name" required> </div>
+                    <div class="4u 12u$(small)"><input type="text" id="last_name" name="last_name" placeholder="Last Name" required></div>
+                    <div class="4u$ 12u$(small)"><input type="email" id="email_address" name="email_address" placeholder="Email Address" required></div>
+                </div>
+            </form>
             <ul class="actions">
-                <li><a href="{{ .Site.Params.Two.url | absURL}}" class="button next">{{ .Site.Params.Two.buttonText }}</a></li>
+                <li><button type="submit" class="button next">Subscribe Now</button></li>
             </ul>
         </div>
     </section>
