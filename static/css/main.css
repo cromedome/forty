@@ -3740,6 +3740,25 @@
         text-align: left;
     }
 
+	#footer-columns a {
+		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		border-bottom: none;
+		color: inherit;
+		text-decoration: none;
+	}
+
+		#footer-columns a:hover {
+			border-bottom-color: transparent;
+			color: #9bf1ff !important;
+		}
+
+		#footer-columns a:active {
+			color: #53e3fb !important;
+		}
+
     #footer-columns .footer-1 {
         display: inline-block;
         vertical-align: top;
