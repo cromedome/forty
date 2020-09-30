@@ -3756,6 +3756,24 @@
 		font-size: 0.8em;
     }
 
+    @media (max-width: 880px) {
+        #footer-columns {
+            /* font: bold 14px sans-serif; */
+        }
+     
+        #footer-columns .footer-1,
+        #footer-columns .footer-2,
+        #footer-columns .footer-3,
+        #footer-columns .footer-4,
+        #footer-columns .footer-5 {
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+ 
+
 	#footer .about {
 		font-size: 0.8em;
 		padding-left: 0;
