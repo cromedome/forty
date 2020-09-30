@@ -3735,6 +3735,34 @@
 
 /* Footer */
 
+    #footer-columns {
+        width: 100%;
+        text-align: left;
+    }
+
+    #footer-columns .footer-1 {
+        display: inline-block;
+        vertical-align: top;
+        width: 28%;
+    }
+
+    #footer-columns .footer-2,
+    #footer-columns .footer-3,
+    #footer-columns .footer-4,
+    #footer-columns .footer-5 {
+        display: inline-block;
+        vertical-align: top;
+        width: 16%;
+		font-size: 0.8em;
+    }
+
+	#footer .about {
+		font-size: 0.8em;
+		padding-left: 0;
+        color: rgba(244, 244, 255, 0.2);
+        margin-top: 10px;
+	}
+
 	#footer .copyright {
 		font-size: 0.8em;
 		list-style: none;

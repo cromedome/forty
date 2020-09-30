@@ -1,16 +1,50 @@
 {{ "<!-- Footer -->" | safeHTML}}
     <footer id="footer">
         <div class="inner">
-            <ul class="icons">
-                {{ range .Site.Params.Footer.social }}
-                    <li><a href="{{ .url | safeHTML }}" class="icon alt {{ .icon }}" target="_blank"><span class="label">{{ .label }}</span></a></li>
-                {{ end }}
-            </ul>
-            <ul class="copyright">
-                <li>&copy; {{ .Site.Params.Footer.copyright }}</li>
-                {{ range .Site.Params.Footer.quicklinks}}
-                <li>{{ .text }} <a href="{{ .url | safeHTML }}">{{ .alt }}</a></li>
-                {{ end }}
-            </ul>
+            <div id="footer-columns">
+                <div class="footer-1">
+                    <ul class="icons">
+                        {{ range .Site.Params.Footer.social }}
+                            <li><a href="{{ .url | safeHTML }}" class="icon alt {{ .icon }}" target="_blank"><span class="label">{{ .label }}</span></a></li>
+                        {{ end }}
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; {{ .Site.Params.Footer.copyright }}</li>
+                        {{ range .Site.Params.Footer.quicklinks}}
+                        <li>{{ .text }} <a href="{{ .url | safeHTML }}">{{ .alt }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+                <div class="footer-2">
+                    <b>Online Tools</b><br>
+                    Group Sign-Up<br>
+                    Client Portal<br>
+                    Book an Appointment
+                </div>
+                <div class="footer-3">
+                    <b>Services</b><br>
+                    Assessment<br>
+                    Consultation<br>
+                    Treatment<br>
+                    Skill Improvement Groups<br>
+                    Parent/Educator Services
+                </div>
+                <div class="footer-4">
+                    <b>Resources</b><br>
+                    Free Resources<br>
+                    Activities at Home<br>
+                    FAQs<br>
+                    Forms and Notices
+                </div>
+                <div class="footer-5">
+                    <b>Company</b><br>
+                    About Us<br>
+                    Events<br>
+                    Policies and Procedures<br>
+                    Fee Schedule<br>
+                    Contact Us
+                </div>
+            </div>
+            <p class="about">{{ .Site.Params.Footer.about }}</p>
         </div>
     </footer>
